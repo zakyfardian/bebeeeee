@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Selamat Ulang Tahun Bebee 💖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+
+            /* 🌙 Background romantis gelap */
+            background:
+            linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+            url("bg.jpg");
+
+            background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        }
+
+        .card {
+            background: white;
+            width: 350px;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+            animation: fadeIn 1.2s ease;
+        }
+
+        h1 {
+            color: #ff4b5c;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff4b5c;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e84355;
+        }
+
+        .hasil {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1> Selamat Ulang Tahun 🌺 Bebee🌺 </h1>
+
+    <!-- FOTO -->
+    <img src="foto.jpeg" alt="Foto Bebe">
+
+    <button onclick="mulai()">TEKANN</button>
+
+    <div class="hasil" id="hasil"></div>
+
+    <!-- MUSIK -->
+    <audio id="musik">
+        <source src="musik.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<script>
+    function mulai() {
+        let nama = "Bebee";
+
+        document.getElementById("hasil").innerHTML =
+            "🎉 Selamat Ulang Tahun, " + nama + "! 🎂";
+
+        document.getElementById("musik").play();
+
+        alert(
+            "Selamat Ulang Tahun " + nama + " 💖\n\n" +
+            "Semoga cita-cita kamu beneran tercapai,\n" +
+            "cantik selalu,\n" +
+            "dan always stay with me — my best part ✨"
+        );
+    }
+</script>
+
+</body>
+</html>
